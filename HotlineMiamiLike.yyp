@@ -31,12 +31,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"HotlineMiamiLike",
   "resources":[
     {"id":{"name":"font_default_18","path":"fonts/font_default_18/font_default_18.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_debug_display","path":"objects/obj_debug_display/obj_debug_display.yy",},},
     {"id":{"name":"obj_enemy_type","path":"objects/obj_enemy_type/obj_enemy_type.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},

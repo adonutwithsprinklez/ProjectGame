@@ -55,5 +55,5 @@ function player_update(){
 	
 	pd = point_direction(x, y, mouse_x, mouse_y);
 	dd = angle_difference(image_angle, pd);
-	_angle -= min(abs(dd), _rspeed) * sign(dd);
+	image_angle -= min(abs(dd), _rspeed) * sign(dd);
 }

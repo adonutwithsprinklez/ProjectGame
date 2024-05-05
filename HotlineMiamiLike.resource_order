@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_bullet","order":7,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"obj_camera","order":8,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_debug_display","order":5,"path":"objects/obj_debug_display/obj_debug_display.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_projectile_type","order":1,"path":"objects/obj_projectile_type/obj_projectile_type.yy",},

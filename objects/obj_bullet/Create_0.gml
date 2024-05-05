@@ -3,4 +3,4 @@
 
 // TODO: Add a lifetime
 
-direction = obj_player._angle;
+direction = obj_player.image_angle;
