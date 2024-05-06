@@ -51,6 +51,10 @@ function slow_time_tick(){
 }
 
 function player_update(){
+	if (obj_game_manager.is_paused()) {
+		exit;
+	}
+	
 	slow_time_tick();
 	
 	pd = point_direction(x, y, mouse_x, mouse_y);

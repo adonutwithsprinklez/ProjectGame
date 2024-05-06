@@ -8,6 +8,7 @@ _game_time = 0; // Game time is stored in seconds, useful for setting events
                 // that occur at X time
 _game_time_precise = 0; // This stores the delta time each step until it
                         // reaches 1, then it increments _game_time
+_paused = false;
 
 // Global variables
 gv_game_speed = 1.0;
@@ -25,6 +26,10 @@ if DEBUG instance_create_layer(0, 0, "HUD", obj_debug_display);
 
 // Global functions
 function get_game_time_delta(_convert_time=false, _include_player=true) {
+	if (_paused){
+		return 0;
+	}
+	
 	time = delta_time * gv_game_speed;
 	if _include_player time = time / obj_player.get_player_speed();
 	if _convert_time time = time/1000000;
@@ -34,4 +39,8 @@ function get_game_time_delta(_convert_time=false, _include_player=true) {
 function get_game_time_seconds(_precise=true){
 	if _precise return _game_time + (_game_time_precise/1000000);
 	return _game_time;
+}
+
+function is_paused() {
+	return _paused;
 }
