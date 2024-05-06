@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (obj_game_manager.is_paused()){
+	exit;
+}
+
 // Movement
 if (keyboard_check(vk_down) or keyboard_check(ord("S"))) {
 	move_in_direction(0, 1);
